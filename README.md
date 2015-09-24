@@ -1,7 +1,7 @@
 # lgtm_creater
 You can easily create LGTM image from gif animation.
 
-![](https://github.com/8398a7/lgtm_creater/blob/master/example.gif?raw=true)
+![](https://github.com/8398a7/lgtm_creater/blob/master/examples/example.gif?raw=true)
 
 ## Requires
 
