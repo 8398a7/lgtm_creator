@@ -2,7 +2,7 @@ require 'pry'
 
 Dir.glob('./before_convert/*').each do |before|
   target_gif = before
-  system "convert -strip #{target_gif} ./tmp/working.png"
+  system "convert -coalesce -strip #{target_gif} ./tmp/working.png"
 
   Dir.glob('./tmp/*.png').each do |fname|
     cnt = fname.split('working-')[1].split('.png')[0]
