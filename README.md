@@ -19,6 +19,10 @@ And then execute:
 Or install it yourself as:
 
     $ gem install lgtm_creator
+    
+## Requirements
+
+- ImageMagick 6.4.9 or later
 
 ## Usage
 
