@@ -1,6 +1,5 @@
 require 'lgtm_creator'
 require 'thor'
-require 'rmagick'
 
 module LgtmCreator
   class CLI < Thor
@@ -9,7 +8,7 @@ module LgtmCreator
     def convert(src, dst)
       if options[:r]
       else
-        LgtmCreator::Util.convert(src, dst)
+        LgtmCreator::Core.convert(src, dst)
       end
     end
   end
