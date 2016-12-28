@@ -5,13 +5,14 @@ module LgtmCreator
   class CLI < Thor
     desc 'convert sample.png', 'add lgtm string.'
     option :r
+    option :autoname, type: :boolean
     def convert(src, dst = '')
+      dst = LgtmCreator::Util.autoname(src) if options[:autoname]
       if options[:r]
         Dir.glob(src + '/*').each do |filename|
           next unless filename =~ /\.gif$/
-          paths = filename.split('/')
-          paths[paths.size - 1] = 'lgtm_' + paths.last
-          LgtmCreator::Core.convert(filename, paths.join('/'))
+          autoname = LgtmCreator::Util.autoname(filename)
+          LgtmCreator::Core.convert(filename, autoname)
         end
       else
         if dst.empty?

@@ -13,5 +13,11 @@ module LgtmCreator
       3.times { paths.pop }
       paths.join('/')
     end
+
+    def autoname(filename)
+      paths = filename.split('/')
+      paths[paths.size - 1] = 'lgtm_' + paths.last
+      paths.join('/')
+    end
   end
 end
