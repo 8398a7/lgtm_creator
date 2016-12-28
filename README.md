@@ -1,20 +1,36 @@
-# lgtm_creator
+# LgtmCreator
+
 You can easily create LGTM image from gif animation.
 
 ![](https://cloud.githubusercontent.com/assets/8043276/12905143/1cdb5638-cf18-11e5-9efb-4f13614700cb.gif)
 
-## Requires
+## Installation
 
-- Ruby
-- ImageMagick
+Add this line to your application's Gemfile:
 
-## Example
-
-```sh
-$ git clone https://github.com/8398a7/lgtm_creator.git
-$ cd lgtm_creator/before_convert
-$ curl -O http://img.gifmagazine.net/gifmagazine/images/32438/original.gif
-$ cd ../
-$ ruby convert.rb
-$ open after_convert/original.gif
+```ruby
+gem 'lgtm_creator'
 ```
+
+And then execute:
+
+    $ bundle
+
+Or install it yourself as:
+
+    $ gem install lgtm_creator
+
+## Usage
+
+TODO: Write usage instructions here
+
+## Development
+
+After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+
+To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/8398a7/lgtm_creator.
+
