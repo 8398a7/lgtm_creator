@@ -1,0 +1,5 @@
+require 'rmagick'
+require 'lgtm_creator/version'
+require 'lgtm_creator/cli'
+require 'lgtm_creator/core'
+require 'lgtm_creator/util'

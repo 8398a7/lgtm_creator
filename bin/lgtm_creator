@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'lgtm_creator'
+
+LgtmCreator::CLI.start
