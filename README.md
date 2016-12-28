@@ -22,7 +22,23 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+When installing globally, `bundle exec` can be omitted.
+
+```shell
+> bundle exec lgtm_creator convert sample.gif result.gif
+```
+
+You can also name it automatically.
+
+```shell
+> bundle exec lgtm_creator convert sample.gif --autoname # result is lgtm_sample.gif
+```
+
+It can also be specified in directory units.
+
+```shell
+> bundle exec lgtm_creator convert dir/images -r # The file name of the deliverable is prefixed with lgtm_.
+```
 
 ## Development
 
