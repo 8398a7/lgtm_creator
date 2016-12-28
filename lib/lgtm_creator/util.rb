@@ -9,8 +9,8 @@ module LgtmCreator
     end
 
     def root_path
-      paths = File.expand_path(File.dirname($PROGRAM_NAME)).split('/')
-      paths.pop
+      paths = caller.select { |line| line.include?('lgtm_creator') && line.include?('core.rb') }[0][/^([^:]+):\d+:in `[^']*'$/, 1].split('/')
+      3.times { paths.pop }
       paths.join('/')
     end
   end
