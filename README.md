@@ -1,3 +1,7 @@
+# This repository has been discontinued.
+
+The destination is [gen-lgtm](https://github.com/8398a7/gen-lgtm).
+
 # LgtmCreator
 
 You can easily create LGTM image from gif animation.
